@@ -13,15 +13,16 @@ import { Switch, } from 'react-native-gesture-handler'
 const InputsScreen = ({ navigation }) => {
     const [enabledButton, toggleButton] = useState(true)
     return <SafeArea style={GlobalStyles.notchSafeArea}>
-        <Text style={GlobalStyles.navTitle}>Inputs Pages </Text>
+        <Text style={GlobalStyles.title}>Inputs Pages </Text>
+        <Box height={50}/>
         <InputComponents />
-        <Box height={100}/>
+        <Box height={50}/>
         <PickersComponent />
-        <Box height={100}/>
+        <Box height={50}/>
         <Text>Switch value is: {"is:" + enabledButton}</Text>
         <Switch value={enabledButton} onValueChange={() => toggleButton(!enabledButton)} />
 
-        <Box height={100}/>
+        <Box height={50}/>
         <Button  color={enabledButton ? "#00b1d2":"gray"} onPress={() => { if (!enabledButton) return; navigation.navigate("Home") }} title="Home Screen" />
 
     </SafeArea>

@@ -9,6 +9,10 @@ const GlobalStyles = StyleSheet.create({
     notchSafeArea: {
         paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0
     },
+    title:{
+        fontSize:45,
+        color:"#5d81bb"
+    },
     box: {
         flex: 1,
         width: 20.0

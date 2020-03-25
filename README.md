@@ -21,6 +21,9 @@ no specific functionality is implemented, this repository is used to manage the 
   5. Lists Page
   <img src="https://raw.githubusercontent.com/esbgo97/learning_react_native/master/screenshots/navigation/lists_page.png" height="25%" width="25%" />
   
+  6. Date and Time pickers
+  <img src="https://raw.githubusercontent.com/esbgo97/learning_react_native/master/screenshots/navigation/timepicker.png" height="25%" width="25%" />
+  <img src="https://raw.githubusercontent.com/esbgo97/learning_react_native/master/screenshots/navigation/datepicker.png" height="25%" width="25%" />
 
 
 
