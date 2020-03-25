@@ -5,7 +5,10 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import HomeScreen from './src/screens/HomeScreen'
 import InputsScreen from './src/screens/InputsScreen'
-import GlobalStyles from './src/utils/GlobalStyles';
+import ListsScreen from './src/screens/ListsScreen'
+import GlobalStyles from './src/utils/GlobalStyles'
+
+
 const Drawer = createDrawerNavigator();
 
 export default function App() {
@@ -14,6 +17,7 @@ export default function App() {
       <Drawer.Navigator initialRouteName="Home" style={GlobalStyles.notchSafeArea}>
         <Drawer.Screen name="Home" component={HomeScreen} />
         <Drawer.Screen name="Inputs" component={InputsScreen} />
+        <Drawer.Screen name="Lists" component={ListsScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

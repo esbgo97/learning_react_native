@@ -18,6 +18,8 @@ no specific functionality is implemented, this repository is used to manage the 
   4. Inputs Page
   <img src="https://raw.githubusercontent.com/esbgo97/learning_react_native/master/screenshots/navigation/inputs_page.png" height="25%" width="25%" />
   
+  5. Lists Page
+  <img src="https://raw.githubusercontent.com/esbgo97/learning_react_native/master/screenshots/navigation/lists_page.png" height="25%" width="25%" />
   
 
 
