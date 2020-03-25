@@ -10,7 +10,7 @@ const routes = [
 ];
 
 const Navigation = (
-    <View >
+    <View style={GlobalStyles.notchSafeArea}>
         <View style={GlobalStyles.navAvatar} >
             <Text style={GlobalStyles.navTitle}>Features app</Text>
         </View>

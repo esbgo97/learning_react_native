@@ -1,23 +1,20 @@
-import React from 'react';
-import { View,Text, DrawerLayoutAndroid, SafeAreaView, } from 'react-native';
-import InputComponents from './src/screens/InputComponents';
-import GlobalStyles from './src/utils/GlobalStyles';
-import Navigation from './src/partials/Navigation';
+import * as React from 'react';
 
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
+
+import HomeScreen from './src/screens/HomeScreen'
+import InputsScreen from './src/screens/InputsScreen'
+import GlobalStyles from './src/utils/GlobalStyles';
+const Drawer = createDrawerNavigator();
 
 export default function App() {
   return (
-    <SafeAreaView style={GlobalStyles.notchSafeArea}>
-      <DrawerLayoutAndroid
-        drawerWidth={300}
-        drawerPosition="left"
-        renderNavigationView={() => Navigation}>
-        <View style={GlobalStyles.mainContent}>
-          <Text style={{ margin: 10, fontSize: 15, }}>Hello World!</Text>
-          <InputComponents />
-        </View>
-      </DrawerLayoutAndroid>
-    </SafeAreaView>
+    <NavigationContainer style={GlobalStyles.notchSafeArea}>
+      <Drawer.Navigator initialRouteName="Home" style={GlobalStyles.notchSafeArea}>
+        <Drawer.Screen name="Home" component={HomeScreen} />
+        <Drawer.Screen name="Inputs" component={InputsScreen} />
+      </Drawer.Navigator>
+    </NavigationContainer>
   );
 }
-
